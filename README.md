@@ -11,21 +11,36 @@ Este repositório contem o nosso projeto da Feira Industrial do 1º ano de Mecat
 # O que é necessário para rodar o código? 
 Todo o Codigo é rodado dentro da Placa Arduino Uno R3 mas também pode ser executado en outros microcontoladores ( como as outras variações do tipo arduino )
 desde que este entenda a linguagem C++, contenha a quantidade de pinos de  OUTPUT e IMPUT analogicos e digitais nescessarios além do poder de memoria e processamento caracteristicos do microcontrolador. 
+
+Tambem é nescessario conter uma ponte H L298n que vai traduzir os comandos do arduino aos motores, servindo como amplificador de corrente.
  **Firmware/Código:**
 * O código principal está na pasta `/Codigo-controle motores X e Y/`.
-     
+   
 * Linguagem: C++ (Arduino) *
 * Arduino IDE (versão 1.8.19 ou superior)
-* 
-* **Bibliotecas (Libraries):**
+  
+**Bibliotecas (Libraries):**
 *Core: padrão do arduino que já vem instalada do programa ide, servindo para as funções DigitalRead, AnalogWrite entre outras presentes no codigo.* 
 
-###  diagrama: 
+### Diagrama: 
 <img width="1536" height="598" alt="Circuito movimento dos motores " src="https://github.com/user-attachments/assets/d8c10031-4ca1-4cf2-b8a3-a01bd66053e5" />
 
-### ⚙️ Instalação e Montagem Passo a passo de como alguém pode replicar o projeto de vocês. 1. 
+### ⚙️ Instalação e Montagem Passo a passo:
+1º Crie uma estrutura em madeira com 4 guias de metal retas e igualmente espaçadas entre si, levando em consideração o eixo central do motor para definir suas alturas; elas servirão como trilhos que guiarão um carrinho de madeira e peças de metal sendo este o eixo X da maquina que tambem comporta o Y: 
 
-**Montagem:** Siga o esquema elétrico acima para conectar todos os componentes. 2. 
+2º Contrua o carrinho de madeira e metal que tambem comporta o motor do eixo Y tendo certeza de que esta tudo alinhado em seu devido lugar e fazendo testes para ver se nenhuma parte que deveria se mexer esta travando, meça bem antes de furar, cortar ou parafusar qualquer parte, fazendo correções na estrutura se nescessario.
+
+3º Intale-o na estrutura e texte se não há travamentos, para facilitar os textes alimentamos os motores usando baterias de 9V:
+
+https://github.com/user-attachments/assets/bc3b539d-ba81-4807-8e67-e46f67662cbd
+
+4º Coloque os 4 Swiches de Fim de curso antes do fim dos eixos dos motores para garantir que o adaptador entre o motor eo eixo não seja forçado (escapando do motor) e o carrinho não perca as hachuras helicoidais do eixo que promovem o seu movimento, veja se eles são acionados testando preferencialmente com as baterias de 9V.
+
+Tambem defina o tamanho e a posição dos cabos de forma que abranjam todo o movimento de ambos os eixos, não entrem na frente deles, não enrosquem ou sejam danifados.
+
+5º A partir das imaguens do diagrama conecte os motores, fins de curso, ponte H eo Arduino organizando a fiação para que fique claro qual fio pertence a qual componente e parte do circuito com uma simples analise, isso facilita muito na hora de fazer manutenções e atualizações.
+
+ 
 
 **Bibliotecas:** Abra a Arduino IDE, vá em "Sketch" > "Include Library" > "Manage Libraries" e instale a `AccelStepper` e `NewPing`. 3.  
 
