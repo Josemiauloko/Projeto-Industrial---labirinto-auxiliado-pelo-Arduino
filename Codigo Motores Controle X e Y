@@ -1,0 +1,61 @@
+Escrito em C++ linguagem padrão do Arduino:  
+
+*//Define Controles Joistick *
+
+const int btnXplus = 6; 
+const int btnXminus = 7; 
+const int btnYplus = 12; 
+const int btnYminus = 13; 
+*// Define Fins de Cursos* 
+const int limitXplus = 2; 
+const int limitXminus = 3; 
+const int limitYplus = 4; 
+const int limitYminus = 5; 
+*// Define Motores *
+const int motorX1 = 8; 
+const int motorX2 = 9; 
+const int motorY1 = 10; 
+const int motorY2 = 11; 
+ 
+void setup() { *//Seta entradas de controle para joisticks e fins de cursos com resistores internos de valor logico invertido ( evita ruidos de medição). * 
+  pinMode(btnXplus, INPUT_PULLUP); 
+  pinMode(btnXminus, INPUT_PULLUP); 
+  pinMode(btnYplus, INPUT_PULLUP); 
+  pinMode(btnYminus, INPUT_PULLUP); 
+ 
+  pinMode(limitXplus, INPUT_PULLUP); 
+  pinMode(limitXminus, INPUT_PULLUP); 
+  pinMode(limitYplus, INPUT_PULLUP); 
+  pinMode(limitYminus, INPUT_PULLUP); 
+ 
+  pinMode(motorX1, OUTPUT); 
+  pinMode(motorX2, OUTPUT); 
+  pinMode(motorY1, OUTPUT); 
+  pinMode(motorY2, OUTPUT); 
+} 
+ 
+void loop() { 
+  *// Movimento X
+  if (digitalRead(btnXplus) == LOW && digitalRead(limitXplus) == HIGH) { 
+    digitalWrite(motorX1, HIGH); 
+    digitalWrite(motorX2, LOW); 
+  } else if (digitalRead(btnXminus) == LOW && digitalRead(limitXminus) == HIGH) { 
+    digitalWrite(motorX1, LOW); 
+    digitalWrite(motorX2, HIGH); 
+  } else { 
+    digitalWrite(motorX1, LOW); 
+    digitalWrite(motorX2, LOW); 
+  } 
+ 
+  *// Movimento Y*
+  if (digitalRead(btnYplus) == LOW && digitalRead(limitYplus) == HIGH) { 
+    digitalWrite(motorY1, HIGH); 
+    digitalWrite(motorY2, LOW); 
+  } else if (digitalRead(btnYminus) == LOW && digitalRead(limitYminus) == HIGH) { 
+    digitalWrite(motorY1, LOW); 
+    digitalWrite(motorY2, HIGH); 
+  } else { 
+    digitalWrite(motorY1, LOW); 
+    digitalWrite(motorY2, LOW); 
+  } 
+}
