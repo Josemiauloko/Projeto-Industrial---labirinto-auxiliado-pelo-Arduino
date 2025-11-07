@@ -25,6 +25,8 @@ Tambem é nescessario conter uma ponte H L298n que vai traduzir os comandos do a
 ### Diagrama: 
 <img width="1536" height="598" alt="Circuito movimento dos motores " src="https://github.com/user-attachments/assets/d8c10031-4ca1-4cf2-b8a3-a01bd66053e5" />
 
+### por as duas imaguens comentadas 
+
 ### ⚙️ Instalação e Montagem Passo a passo:
 1º Crie uma estrutura em madeira com 4 guias de metal retas e igualmente espaçadas entre si, levando em consideração o eixo central do motor para definir suas alturas; elas servirão como trilhos que guiarão um carrinho de madeira e peças de metal sendo este o eixo X da maquina que tambem comporta o Y: 
 
@@ -39,6 +41,7 @@ https://github.com/user-attachments/assets/bc3b539d-ba81-4807-8e67-e46f67662cbd
 Tambem defina o tamanho e a posição dos cabos de forma que abranjam todo o movimento de ambos os eixos, não entrem na frente deles, não enrosquem ou sejam danifados.
 
 5º A partir das imaguens do diagrama conecte os motores, fins de curso, ponte H eo Arduino organizando a fiação para que fique claro qual fio pertence a qual componente e parte do circuito com uma simples analise, isso facilita muito na hora de fazer manutenções e atualizações.
+
 
  
 
