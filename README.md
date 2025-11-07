@@ -7,11 +7,11 @@ Este repositório contem o nosso projeto da Feira Industrial do 1º ano de Mecat
 
 ### 🔧 Hardware (Componentes Utilizados) Lista de todos os componentes físicos necessários para montar o projeto. * **Controlador:** 1x Arduino Uno R3 (ou Raspberry Pi, ESP32, etc.) * **Sensores:**     * 1x Sensor Ultrassônico HC-SR04     * 2x Sensores de Fim de Curso * **Atuadores:**     * 3x Servo Motores MG996R (Eixo X, Y, Garra)     * 1x Motor de Passo NEMA 17 * **Outros:**     * 1x Protoboard     * Jumpers (Macho-Macho, Macho-Fêmea)     * Fonte de alimentação externa 5V/2A     * Peças 3D (disponibilizar o .STL se possível)
 
-### 💻 Software e Dependências 
-* O que é necessário para rodar o código? *
-* Todo o Codigo é rodado dentro da Placa Arduino Uno R3 mas também pode ser executado en outros microcontoladores ( como as outras variações do tipo arduino )
+### 💻 Software e Dependências:
+# O que é necessário para rodar o código? 
+Todo o Codigo é rodado dentro da Placa Arduino Uno R3 mas também pode ser executado en outros microcontoladores ( como as outras variações do tipo arduino )
 desde que este entenda a linguagem C++, contenha a quantidade de pinos de  OUTPUT e IMPUT analogicos e digitais nescessarios além do poder de memoria e processamento caracteristicos do microcontrolador. 
-**Firmware/Código:**
+ **Firmware/Código:**
 * O código principal está na pasta `/Codigo-controle motores X e Y/`.
      
 * Linguagem: C++ (Arduino) *
