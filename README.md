@@ -51,6 +51,8 @@ Todo o Codigo é rodado dentro da Placa Arduino Uno R3 mas também pode ser exec
 Tambem é nescessario conter uma ponte H L298n que vai traduzir os comandos do arduino aos motores, servindo como amplificador de corrente.
  **Firmware/Código:**
 O código principal está na pasta `Codigo-controle motores X e Y`.
+O Secundario:
+E o de texte: 
 Linguagem: C++ (Arduino) *
 Arduino IDE (versão 1.8.19 ou superior)
   
