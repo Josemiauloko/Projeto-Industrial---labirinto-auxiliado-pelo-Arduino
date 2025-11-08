@@ -1,0 +1,27 @@
+//Codigo vai vem de texte 
+const int motorX1 = 8;
+const int motorX2 = 9;
+const int motorY1 = 10;
+const int motorY2 = 11;
+
+void setup() {
+  pinMode(motorX1, OUTPUT);
+  pinMode(motorX2, OUTPUT);
+  pinMode(motorY1, OUTPUT);
+  pinMode(motorY2, OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+    digitalWrite(motorY1, HIGH);
+    digitalWrite(motorY2, LOW);  
+    digitalWrite(motorX1, HIGH);
+    digitalWrite(motorX2, LOW);
+delay(1000);
+
+    digitalWrite(motorY1, LOW);
+    digitalWrite(motorY2, HIGH);  
+    digitalWrite(motorX1, LOW);
+    digitalWrite(motorX2, HIGH);
+delay(1000);
+}
