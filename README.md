@@ -6,13 +6,15 @@ Este repositório contem o nosso projeto da Feira Industrial do 1º ano de Mecat
 * [Nome do Aluno 2](https.github.com/usuario-github-2) 
 * [Nome do Aluno 3](https.github.com/usuario-github-3)
 
-### 📖 Descrição do Projeto Aqui vocês devem detalhar melhor o projeto. * Qual problema ele resolve? * Qual era o desafio da Semana Industrial? * Como ele funciona (visão geral)? * Quais tecnologias (hardware e software) foram centrais? 
+### 📖 Descrição do Projeto: 
+#### Problema: Montar um jogo Mecatronico para a feira industial, mantendo um custo relativamente baixo.
+* Qual era o desafio da Semana Industrial? * Como ele funciona (visão geral)? * Quais tecnologias (hardware e software) foram centrais? 
 
 ### 🔧 Hardware (Componentes Utilizados):
 
 *Arduino UNO 
 
-*Ponte H l298n 
+*Ponte H l298n (Guia de uso: 
 
 *cabos Macho-Macho. 
 
@@ -22,7 +24,9 @@ Este repositório contem o nosso projeto da Feira Industrial do 1º ano de Mecat
 
 *8 Switches 
 
-*Fonte de alimentação ponte H 12V, 3A 
+* Fonte de alimentação arduino 9V, 3A (outras alternativas disponiveis em: https://docs.arduino.cc/learn/electronics/power-pins/ )
+
+*Fonte de alimentação ponte H 12V, 2A 
 
 *Fita adesiva 
 
@@ -90,34 +94,48 @@ Tambem defina o tamanho e a posição dos cabos de forma que abranjam todo o mov
 
 5º A partir das imaguens do diagrama conecte os componentes abaixo, se atentando aos detalhes e organizando a fiação para que fique claro qual fio pertence a qual componente e parte do circuito com uma simples analise, isso facilita muito na hora de montar, fazer manutenções e atualizações.
 
-* Motores
-desencape as pontas dos seus dois polos para melhor conecção na ponte H.
+* Motores:  Desencape as pontas dos seus dois polos para melhor conecção na ponte H.
 
-* Fins de curso
-Os terras irão para a protoboard e depois para o arduino.
+* Fins de curso:  Os terras irão para a protoboard e depois para o arduino.
 Os Fios de 5V irão se conectar no arduino, sendo possivel se guiar quais pinos representam os limites X+, X- , Y+ e Y- a partir do codigo e do diagrama.
 De preferencia solde jumpers tipo macho nos fios dos fim de curso, facilitando a conecção deles no arduino e na protoboard.
 
-* Ponte H eo Arduino
+* Fonte de Alimentação Ponte H e o Arduino:
+
 Conecte os pinos digitais do Arduino em suas respectivas entradas INT da ponte H.
+Ligue a fonde de alimentação para o arduino (no minimo 5v - Maximo recomendado de 7V) 
 
 Se atente a configuração da ponte que é feita com os jumpers externos colocados em V_LOgic e nas Saidas ATV_A e ATV_B.
-para mais informações sobre pontes H ascesse: https://blog.eletrogate.com/guia-definitivo-de-uso-da-ponte-h-l298n/
 
-* Joisticks
-No diagrama os Interruptores representam os Switches do Joystick que são acionados na direção oposta da que se pretende se mover.
+Configurada desencape os fios da fonte de alimentação, conecte na ponte H e apenas lige na tomada confirmação de que a mesma é capaz de alimentar os motores com no minimo 5V e 2A.
+
+*Guia de Uso Pontes H: https://blog.eletrogate.com/guia-definitivo-de-uso-da-ponte-h-l298n/*
+
+*Metodos de Alimentação do Arduino: https://docs.arduino.cc/learn/electronics/power-pins/*
+
+* Joisticks:  No diagrama os Interruptores representam os Switches do Joystick que são acionados na direção oposta da que se pretende se mover.
 Os terras irão para a protoboard e depois para o arduino separados dos terras dos Fins de curso
 Os Fios de 5V irão se conectar no arduino, sendo possivel se guiar quais pinos representam X+, X- , Y+ e Y- a partir do codigo e do diagrama.
-
-6º apos tudo conectado vem o texte dos fins de Curso e dos motores deixe ambos os eixos da estrutura em uma posição central, carrege um coigo basico como este:
-
 
 
 **Upload do Código:**     
 1º Conecte o Arduino ao computador.
 2º Abra o arquivo `Codigo-controle motores X e Y, o Arduino Ide e copie e cole no programa.
 3º Selecione a Placa (Arduino Uno) e a Porta COM correta.
-5º Clique em "Carregar". 
+5º Clique em "Carregar".
+
+# Textes e Ajustes Finais
+## Apos tudo conectado vem o texte dos Fins de Curso, Joistick e dos Motores:
+1 º Motores: Deixe ambos os eixos da estrutura em uma posição central, carrege um coigo basico como Codigo vai e vem de texte. (coloca os motores para irem e voltarem com um segundo de duração) e inverta a conexão dos polos deles na ponte H caso não estejam indo para o lado correto.
+
+2 º Joistick: Depois disso carrege o Codigo-controle motores X e Y e texte com o joistick se a movimentação se dá para o lado correto, caso contrario verifique se os pinos do joistick no Arduino estão na posição correta se lembrando que no esquema fisico você move a cabeça do Joistick para frente mas quem aciona é o switche trazeiro com isso se aplicando a todas as direções.
+
+Evite de ir até o fim de curso, pois ele ainda pode estar mau configurado travando o movimento do lado errado e tambem você pode acabar danificando a estrutura caso o carrinho não pare.
+
+3 º Fins de Curso: clique manualmente nos fins de curso e veja qual dos lados do joistick ele travou, caso aja problemas mude no software qual é o pino de saida daquele fim de curso, não se esquecendo de trocar o outro pino que tambêm apresenta falha na definição.
+
+Se tudo estiver certo é para o moter que por exemplo estava avançando na direção Y+ (btnYplus no codigo) parar quando ele atingir o Fim de Curso (limitYplus) 
+ 
 
 ▶️ Como Usar Depois de montado e programado, como o projeto funciona? 1.  Ligue a fonte de alimentação externa. 2.  O braço robótico irá para a posição "Home" (inicial). 3.  Abra o "Serial Monitor" na Arduino IDE (Baud Rate 9600). 4.  Envie '1' para iniciar o ciclo automático ou '0' para parar. 
 
