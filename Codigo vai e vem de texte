@@ -1,4 +1,4 @@
-//Codigo vai vem de teste 
+//Codigo vai vem de texte 
 const int motorX1 = 8;
 const int motorX2 = 9;
 const int motorY1 = 10;
