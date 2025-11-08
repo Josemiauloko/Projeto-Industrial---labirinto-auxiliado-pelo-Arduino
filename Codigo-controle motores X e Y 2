@@ -1,0 +1,69 @@
+const int btnXplus = 7;
+const int btnXminus = 6;
+const int btnYplus = 13;
+const int btnYminus = 12;
+
+const int limitXplus = 2;
+const int limitXminus = 3;
+const int limitYplus = 4;
+const int limitYminus = 5;
+
+const int motorX1 = 8;
+const int motorX2 = 9;
+const int motorY1 = 10;
+const int motorY2 = 11;
+
+void setup() {
+  pinMode(btnXplus, INPUT_PULLUP);
+  pinMode(btnXminus, INPUT_PULLUP);
+  pinMode(btnYplus, INPUT_PULLUP);
+  pinMode(btnYminus, INPUT_PULLUP);
+
+  pinMode(limitXplus, INPUT_PULLUP);
+  pinMode(limitXminus, INPUT_PULLUP);
+  pinMode(limitYplus, INPUT_PULLUP);
+  pinMode(limitYminus, INPUT_PULLUP);
+
+  pinMode(motorX1, OUTPUT);
+  pinMode(motorX2, OUTPUT);
+  pinMode(motorY1, OUTPUT);
+  pinMode(motorY2, OUTPUT);
+}
+
+void loop() {
+  // Movimento Y+
+  if (digitalRead(btnXplus) == LOW && digitalRead(limitYplus) == HIGH) {
+    digitalWrite(motorX1, HIGH);
+    digitalWrite(motorX2, LOW);
+  }else if (digitalRead(btnXminus) == LOW && digitalRead(limitYminus) == HIGH) {
+    digitalWrite(motorX1, LOW);
+    digitalWrite(motorX2, HIGH);
+  }else if (digitalRead(btnXplus) == LOW && digitalRead(limitYplus) == LOW) {
+    digitalWrite(motorX1, LOW);
+    digitalWrite(motorX2, LOW);
+  }else if (digitalRead(btnXminus) == LOW && digitalRead(limitYminus) == LOW) {
+    digitalWrite(motorX1, LOW);
+    digitalWrite(motorX2, LOW);
+  } else {
+    digitalWrite(motorX1, LOW);
+    digitalWrite(motorX2, LOW);
+  }
+
+ // Movimento X+
+  if (digitalRead(btnYplus) == LOW && digitalRead(limitXplus) == HIGH) {
+    digitalWrite(motorY1, HIGH);
+    digitalWrite(motorY2, LOW);
+  }else if (digitalRead(btnYminus) == LOW && digitalRead(limitXminus) == HIGH) {
+    digitalWrite(motorY1, LOW);
+    digitalWrite(motorY2, HIGH);
+  }else if (digitalRead(btnYplus) == LOW && digitalRead(limitXplus) == LOW) {
+    digitalWrite(motorY1, LOW);
+    digitalWrite(motorY2, LOW);
+  }else if (digitalRead(btnYminus) == LOW && digitalRead(limitXminus) == LOW) {
+    digitalWrite(motorY1, LOW);
+    digitalWrite(motorY2, LOW);
+  } else {
+    digitalWrite(motorY1, LOW);
+    digitalWrite(motorY2, LOW);
+  }
+}
