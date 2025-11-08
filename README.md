@@ -7,8 +7,31 @@ Este repositório contem o nosso projeto da Feira Industrial do 1º ano de Mecat
 * [Nome do Aluno 3](https.github.com/usuario-github-3)
 
 ### 📖 Descrição do Projeto: 
-#### Problema: Montar um jogo Mecatronico para a feira industial, mantendo um custo relativamente baixo.
-* Qual era o desafio da Semana Industrial? * Como ele funciona (visão geral)? * Quais tecnologias (hardware e software) foram centrais? 
+#### Problema: Mover um cervo de MDF por um labirinto de madeira nos eixos X e Y por meio de um joistick.
+
+#### Desafio da Semana Industrial:
+Montar um jogo Mecatronico para a feira industial, mantendo um custo relativamente baixo, sem ter sequer uma aula sobre o Arduino.
+
+#### Funcionamento: 
+##### Joistick:
+Como exemplo digamos que o jogador move o Joistick para direita (X+) afim de passar o cervo pelo labirinto tendo como objetivo chegar ao seu final o mais rapido possivel, assim os Swiches traduzem a informação mecanica em um sinal eletrico de HIGH para LOW, que é interpretado pelo arduino por meio de uma de suas portas digitais. 
+
+##### Fins de Curso:
+O arduino verifica o estado atual dos fins de curso para saber se algum deles esta acionado (no nosso caso limitXplus), caso não o sistema permite que o motor avançe.
+Mas se o fim de curso estiver ativado o motor para impedindo que o carrinho saia do trilho e/ou quebre alguma parte do projeto.
+E como os outros Swiches estão dezativados o arduino permite que os motores façam a reversão do seu curso e ande nos outros eixos não travando o sistema.
+
+##### Motores:
+Rotacionam o heixo helicoidal que promove a movimentação de cada carrinho por meio de uma engrenaguem / Porca que tem a sua rotação travada.
+Para ir para frente ou tras são energizadas as suas entradas com 12v, promovendo bastante velocidade, se trocando de lado os polos positivos e negativo dos moteres, trabalho feito pela ponte H.
+
+##### Ponte H l298n:
+Capta os comandos de acionamento dos motores enviados pelo Arduino, ligando-os e desligando-os. ela esta presente unicamente pelo fato de estes motores consumirem > 40mA que o arduino não suporta fornecer, servindo como um Amplificador.
+
+##### Arduino: 
+Processa os imputs e outputs de sistema, fazendo as comparações logicas ------------------------------------------------------
+
+Quais tecnologias (hardware e software) foram centrais? 
 
 ### 🔧 Hardware (Componentes Utilizados):
 
@@ -52,7 +75,7 @@ Tambem é nescessario conter uma ponte H L298n que vai traduzir os comandos do a
  **Firmware/Código:**
 O código principal está na pasta `Codigo-controle motores X e Y`.
 O Secundario caso o primeiro não funcione: Codigo-controle motores X e Y 2
-E o de texte: 
+E o de texte: Codigo vai e vem de texte
 Linguagem: C++ (Arduino) *
 Arduino IDE (versão 1.8.19 ou superior)
   
@@ -136,7 +159,7 @@ Evite de ir até o fim de curso, pois ele ainda pode estar mau configurado trava
 
 3 º Fins de Curso: clique manualmente nos fins de curso e veja qual dos lados do joistick ele travou, caso aja problemas mude no software qual é o pino de saida daquele fim de curso, não se esquecendo de trocar o outro pino que tambêm apresenta falha na definição.
 
-Se tudo estiver certo é para o moter que por exemplo estava avançando na direção Y+ (btnYplus no codigo) parar quando ele atingir o Fim de Curso (limitYplus) 
+Se tudo estiver certo é para o moter que por exemplo estava avançando na direção Y+ (btnYplus no codigo) parar quando ele atingir o Fim de Curso (limitYplus). 
  
 
 ▶️ Como Usar Depois de montado e programado, como o projeto funciona? 1.  Ligue a fonte de alimentação externa. 2.  O braço robótico irá para a posição "Home" (inicial). 3.  Abra o "Serial Monitor" na Arduino IDE (Baud Rate 9600). 4.  Envie '1' para iniciar o ciclo automático ou '0' para parar. 
