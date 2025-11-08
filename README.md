@@ -109,7 +109,8 @@ No diagrama os Interruptores representam os Switches do Joystick que são aciona
 Os terras irão para a protoboard e depois para o arduino separados dos terras dos Fins de curso
 Os Fios de 5V irão se conectar no arduino, sendo possivel se guiar quais pinos representam X+, X- , Y+ e Y- a partir do codigo e do diagrama.
 
-6º
+6º apos tudo conectado vem o texte dos fins de Curso e dos motores deixe ambos os eixos da estrutura em uma posição central, carrege um coigo basico como este:
+
 
 
 **Upload do Código:**     
