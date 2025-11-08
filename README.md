@@ -40,13 +40,13 @@ Este repositório contem o nosso projeto da Feira Industrial do 1º ano de Mecat
 
 *Eixos com molas de aço  
 
-### 💻 Software e Dependências:
-# O que é necessário para rodar o código? 
+## 💻 Software e Dependências:
+### O que é necessário para rodar o código? 
 Todo o Codigo é rodado dentro da Placa Arduino Uno R3 mas também pode ser executado en outros microcontoladores ( como as outras variações do tipo arduino ) desde que este entenda a linguagem C++, contenha a quantidade de pinos de  OUTPUT e IMPUT analogicos e digitais nescessarios além do poder de memoria e processamento caracteristicos do microcontrolador. 
 
 Tambem é nescessario conter uma ponte H L298n que vai traduzir os comandos do arduino aos motores, servindo como amplificador de corrente.
  **Firmware/Código:**
-O código principal está na pasta `/Codigo-controle motores X e Y/`.
+O código principal está na pasta `Codigo-controle motores X e Y`.
 Linguagem: C++ (Arduino) *
 Arduino IDE (versão 1.8.19 ou superior)
   
@@ -65,10 +65,17 @@ Motores e Alimentação do circuito:
 
 
 ### ⚙️ Instalação e Montagem Passo a passo:
-![Imagem do WhatsApp de 2025-11-04 à(s) 15 04 16_bc14aab1](https://github.com/user-attachments/assets/6472bd25-01e0-46b5-afc8-1af39efc6849)
+
+![Imagem do WhatsApp de 2025-11-07 à(s) 17 22 19_f7dc66e9](https://github.com/user-attachments/assets/ed9247b3-fddb-4f4f-8e4b-c1ff70bc7217)
 
 
-1º Crie uma estrutura em madeira com 4 guias de metal retas e igualmente espaçadas entre si, levando em consideração o eixo central do motor para definir suas alturas; elas servirão como trilhos que guiarão um carrinho de madeira e peças de metal sendo este o eixo X da maquina que tambem comporta o Y: 
+1º Crie uma estrutura em madeira com 4 guias de metal retas e igualmente espaçadas entre si, levando em consideração o eixo central do motor para definir suas alturas:
+
+![Imagem do WhatsApp de 2025-11-07 à(s) 17 22 17_c0de00dd](https://github.com/user-attachments/assets/f511722c-dd74-461c-8de6-bfab259ed546)
+
+elas servirão como trilhos que guiarão um carrinho de madeira e peças de metal sendo este o eixo X da maquina que tambem comporta o Y: 
+
+![Imagem do WhatsApp de 2025-11-07 à(s) 17 22 17_ca5a3581](https://github.com/user-attachments/assets/d4a916d6-95e1-4ade-bbb6-ddfa52fc5191)
 
 2º Construa o carrinho de madeira e metal que tambem comporta o motor do eixo Y tendo certeza de que esta tudo alinhado em seu devido lugar e fazendo testes para ver se nenhuma parte que deveria se mexer esta travando, meça bem antes de furar, cortar ou parafusar qualquer parte, fazendo correções na estrutura se nescessario.
 
@@ -77,16 +84,39 @@ Motores e Alimentação do circuito:
 https://github.com/user-attachments/assets/bc3b539d-ba81-4807-8e67-e46f67662cbd
 
 4º Coloque os 4 Swiches de Fim de curso antes do fim dos eixos dos motores para garantir que o adaptador entre o motor eo eixo não seja forçado (escapando do motor) e o carrinho não perca as hachuras helicoidais do eixo que promovem o seu movimento, veja se eles são acionados testando preferencialmente com as baterias de 9V.
+![Imagem do WhatsApp de 2025-11-07 à(s) 17 22 17_2ad4dbd2](https://github.com/user-attachments/assets/0f076575-5c42-48d9-9959-8145377b9ff3)
 
 Tambem defina o tamanho e a posição dos cabos de forma que abranjam todo o movimento de ambos os eixos, não entrem na frente deles, não enrosquem ou sejam danifados.
 
-5º A partir das imaguens do diagrama conecte os motores, fins de curso, ponte H eo Arduino organizando a fiação para que fique claro qual fio pertence a qual componente e parte do circuito com uma simples analise, isso facilita muito na hora de fazer manutenções e atualizações.
+5º A partir das imaguens do diagrama conecte os componentes abaixo, se atentando aos detalhes e organizando a fiação para que fique claro qual fio pertence a qual componente e parte do circuito com uma simples analise, isso facilita muito na hora de montar, fazer manutenções e atualizações.
+
+* Motores
+desencape as pontas dos seus dois polos para melhor conecção na ponte H.
+
+* Fins de curso
+Os terras irão para a protoboard e depois para o arduino.
+Os Fios de 5V irão se conectar no arduino, sendo possivel se guiar quais pinos representam os limites X+, X- , Y+ e Y- a partir do codigo e do diagrama.
+De preferencia solde jumpers tipo macho nos fios dos fim de curso, facilitando a conecção deles no arduino e na protoboard.
+
+* Ponte H eo Arduino
+Conecte os pinos digitais do Arduino em suas respectivas entradas INT da ponte H.
+
+Se atente a configuração da ponte que é feita com os jumpers externos colocados em V_LOgic e nas Saidas ATV_A e ATV_B.
+para mais informações sobre pontes H ascesse: https://blog.eletrogate.com/guia-definitivo-de-uso-da-ponte-h-l298n/
+
+* Joisticks
+No diagrama os Interruptores representam os Switches do Joystick que são acionados na direção oposta da que se pretende se mover.
+Os terras irão para a protoboard e depois para o arduino separados dos terras dos Fins de curso
+Os Fios de 5V irão se conectar no arduino, sendo possivel se guiar quais pinos representam X+, X- , Y+ e Y- a partir do codigo e do diagrama.
+
+6º
+
 
 **Upload do Código:**     
 1º Conecte o Arduino ao computador.
-2º Abra o arquivo `-----------------------------`.
+2º Abra o arquivo `Codigo-controle motores X e Y, o Arduino Ide e copie e cole no programa.
 3º Selecione a Placa (Arduino Uno) e a Porta COM correta.
-4º Clique em "Carregar". 
+5º Clique em "Carregar". 
 
 ▶️ Como Usar Depois de montado e programado, como o projeto funciona? 1.  Ligue a fonte de alimentação externa. 2.  O braço robótico irá para a posição "Home" (inicial). 3.  Abra o "Serial Monitor" na Arduino IDE (Baud Rate 9600). 4.  Envie '1' para iniciar o ciclo automático ou '0' para parar. 
 
