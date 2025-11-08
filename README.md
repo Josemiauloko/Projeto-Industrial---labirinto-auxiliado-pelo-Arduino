@@ -84,12 +84,15 @@ Arduino IDE (versão 1.8.19 ou superior)
 
 ### Diagrama: 
 Diagrama Geral (não comentado):
+
 <img width="1536" height="598" alt="Circuito movimento dos motores " src="https://github.com/user-attachments/assets/d8c10031-4ca1-4cf2-b8a3-a01bd66053e5" />
 
-Controladores: 
+Controladores:
+
 <img width="662" height="601" alt="Captura de tela 2025-11-08 144059" src="https://github.com/user-attachments/assets/caa1ce85-f53a-45fa-af81-cd4bf228ded9" />
 
 Motores e Alimentação do circuito:
+
 <img width="859" height="690" alt="image" src="https://github.com/user-attachments/assets/741c18dd-6898-4b02-a693-db54bef5afa3" />
 
 
@@ -113,6 +116,7 @@ elas servirão como trilhos que guiarão um carrinho de madeira e peças de meta
 https://github.com/user-attachments/assets/bc3b539d-ba81-4807-8e67-e46f67662cbd
 
 4º Coloque os 4 Swiches de Fim de curso antes do fim dos eixos dos motores para garantir que o adaptador entre o motor eo eixo não seja forçado (escapando do motor) e o carrinho não perca as hachuras helicoidais do eixo que promovem o seu movimento, veja se eles são acionados testando preferencialmente com as baterias de 9V.
+
 ![Imagem do WhatsApp de 2025-11-07 à(s) 17 22 17_2ad4dbd2](https://github.com/user-attachments/assets/0f076575-5c42-48d9-9959-8145377b9ff3)
 
 Tambem defina o tamanho e a posição dos cabos de forma que abranjam todo o movimento de ambos os eixos, não entrem na frente deles, não enrosquem ou sejam danifados.
@@ -152,6 +156,8 @@ Os Fios de 5V irão se conectar no arduino, sendo possivel se guiar quais pinos 
 # Textes e Ajustes Finais
 ## Apos tudo conectado vem o texte dos Fins de Curso, Joistick e dos Motores:
 1 º Motores: Deixe ambos os eixos da estrutura em uma posição central, carrege um coigo basico como Codigo vai e vem de texte. (coloca os motores para irem e voltarem com um segundo de duração) e inverta a conexão dos polos deles na ponte H caso não estejam indo para o lado correto.
+
+https://github.com/user-attachments/assets/6c203f99-3733-4c18-b905-70877bff4f25
 
 2 º Joistick: Depois disso carrege o Codigo-controle motores X e Y e texte com o joistick se a movimentação se dá para o lado correto, caso contrario verifique se os pinos do joistick no Arduino estão na posição correta se lembrando que no esquema fisico você move a cabeça do Joistick para frente mas quem aciona é o switche trazeiro com isso se aplicando a todas as direções.
 
