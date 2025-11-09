@@ -2,7 +2,7 @@
 Este repositório contem o nosso projeto da Feira Industrial do 1º ano de Mecatrônica (tema: Jogos Eletrônicos) onde foi desenvolvido um labirinto com um personaguem controlado por motores com redução de torque DC. Que juntos de outros elementos formam um mecanismo que se movimenta nos eixos espaciais X e Y por controle de um Joystick  
 
 ### 👥 Equipe (Colaboradores) 
-* [José Heitor Backhaus Soares](https.github.com/usuario-github)  
+* [José Heitor Backhaus Soares](https.github.com/Josemiauloko)  
 * [Nome do Aluno 2](https.github.com/usuario-github-2) 
 * [Nome do Aluno 3](https.github.com/usuario-github-3)
 
