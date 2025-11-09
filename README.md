@@ -2,8 +2,8 @@
 Este repositório contem o nosso projeto da Feira Industrial do 1º ano de Mecatrônica (tema: Jogos Eletrônicos) onde foi desenvolvido um labirinto com um personaguem controlado por motores com redução de torque DC. Que juntos de outros elementos formam um mecanismo que se movimenta nos eixos espaciais X e Y por controle de um Joystick  
 
 ### 👥 Equipe (Colaboradores) 
-* [José Heitor Backhaus Soares](https.github.com/Josemiauloko-github)  
-* [Nicolas Abraão](https.github.com/NLLL-03-github) 
+* [José Heitor Backhaus Soares](https.github.com/Josemiauloko-github-1)  
+* [Nicolas Abraão](https.github.com/NLLL-03-github-2) 
 * [Nome do Aluno 3](https.github.com/Kayanabi-github)
 
 ### 📖 Descrição do Projeto: 
@@ -26,18 +26,18 @@ Rotacionam o heixo helicoidal que promove a movimentação de cada carrinho por 
 Para ir para frente ou tras são energizadas as suas entradas com 12v, promovendo bastante velocidade, se trocando de lado os polos positivos e negativo dos moteres, trabalho feito pela ponte H.
 
 ##### Ponte H l298n:
-Capta os comandos de acionamento dos motores enviados pelo Arduino, ligando-os e desligando-os. ela esta presente unicamente pelo fato de estes motores consumirem > 40mA que o arduino não suporta fornecer, servindo como um Amplificador.
+Capta os comandos de acionamento dos motores enviados pelo Arduino, ligando-os e desligando-os. ela esta presente unicamente pelo fato de estes motores consumirem corrente > 40mA que o arduino não suporta fornecer, servindo como um Amplificador.
 
 ##### Arduino: 
-Processa os imputs e outputs de sistema, fazendo as comparações logicas Ife else para verificar se o joistick eo fim de curso estão ativados em algum sentido, para promover ou interromper o movimento dos motores.
+Processa os imputs e outputs de sistema, fazendo as comparações logicas ife else para verificar se o joistick eo fim de curso estão ativados em algum sentido, promovendo ou interrompendo o movimento dos motores.
 
-Para o fim de fazer um jogo controlado por um Joistick o arduino ea ponte H pderiam ser dispensados do Projeto por meio da ligação em serie de uma fonte de tensão nos Joisticks, nos Fins de curso e depois nos Motores, porem pretendemos utilizar a estrutura e as funções do arduino em projetos futuros.
+Para o fim de fazer um jogo controlado por um Joistick o arduino ea ponte H poderiam ser dispensados do Projeto por meio da ligação em serie de uma fonte de tensão nos Joisticks, nos Fins de curso e depois nos Motores, porem pretendemos utilizar a estrutura e as funções do arduino em projetos futuros.
 
 ### 🔧 Hardware (Componentes Utilizados):
 
 *Arduino UNO 
 
-*Ponte H l298n (Guia de uso: 
+*Ponte H l298n (Guia de uso: https://blog.eletrogate.com/guia-definitivo-de-uso-da-ponte-h-l298n/)
 
 *cabos Macho-Macho. 
 
