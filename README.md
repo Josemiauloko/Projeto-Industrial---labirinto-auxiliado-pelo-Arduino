@@ -105,7 +105,9 @@ Motores e Alimentação do circuito:
 <img width="859" height="690" alt="image" src="https://github.com/user-attachments/assets/741c18dd-6898-4b02-a693-db54bef5afa3" />
 
 
-### ⚙️ Instalação e Montagem Passo a passo:
+
+
+## ⚙️ Instalação e Montagem Passo a passo:
 
 ![Imagem do WhatsApp de 2025-11-07 à(s) 17 22 19_f7dc66e9](https://github.com/user-attachments/assets/ed9247b3-fddb-4f4f-8e4b-c1ff70bc7217)
 
@@ -114,9 +116,11 @@ Motores e Alimentação do circuito:
 
 ![Imagem do WhatsApp de 2025-11-07 à(s) 17 22 17_c0de00dd](https://github.com/user-attachments/assets/f511722c-dd74-461c-8de6-bfab259ed546)
 
+
 elas servirão como trilhos que guiarão um carrinho de madeira e peças de metal sendo este o eixo X da máquina que também comporta o Y: 
 
 ![Imagem do WhatsApp de 2025-11-07 à(s) 17 22 17_ca5a3581](https://github.com/user-attachments/assets/d4a916d6-95e1-4ade-bbb6-ddfa52fc5191)
+
 
 2º Construa o carrinho de madeira e metal que também comporta o motor do eixo Y tendo certeza de que está tudo alinhado em seu devido lugar e fazendo testes para ver se nenhuma parte que deveria se mexer está travando, meça bem antes de furar, cortar ou parafusar qualquer parte, fazendo correções na estrutura se necessário.
 
@@ -124,9 +128,11 @@ elas servirão como trilhos que guiarão um carrinho de madeira e peças de meta
 
 https://github.com/user-attachments/assets/bc3b539d-ba81-4807-8e67-e46f67662cbd
 
+
 4º Coloque os 4 Switches de Fim de curso antes do fim dos eixos dos motores para garantir que o adaptador entre o motor e o eixo não seja forçado (escapando do motor) e o carrinho não perca as hachuras helicoidais do eixo que promovem o seu movimento, veja se eles são acionados testando preferencialmente com as baterias de 9V.
 
 ![Imagem do WhatsApp de 2025-11-07 à(s) 17 22 17_2ad4dbd2](https://github.com/user-attachments/assets/0f076575-5c42-48d9-9959-8145377b9ff3)
+
 
 Também defina o tamanho e a posição dos cabos de forma que abranjam todo o movimento de ambos os eixos, não entrem na frente deles, não enrosquem ou sejam danificados.
 
@@ -165,9 +171,11 @@ Os Fios de 5V irão se conectar no Arduino, sendo possível se guiar quais pinos
 
 ![Imagem do WhatsApp de 2025-10-27 à(s) 21 13 39_9aec21e9](https://github.com/user-attachments/assets/9591c3e2-e577-4910-a6a5-c9395635ab99)
 
+
 8º Construa a Caixa de madeira, papelão ou outros materiais que comportara toda a estrutura, é recomendado madeira pela durabilidade, mas também pelo peso do resto de toda estrutura principal.
 
 ![Imagem do WhatsApp de 2025-10-23 à(s) 19 27 24_db064115](https://github.com/user-attachments/assets/2e623871-9e40-496a-a5d0-516d3ba604fa)
+
 
 9º Transfira a estrutura para a caixa, se quiser antes de fazer isso decore-a .
 
@@ -183,7 +191,7 @@ https://github.com/user-attachments/assets/d7e7e5df-c390-4ed9-b336-b95a4e8cced6
 5º Clique em "Carregar".
 
 # Testes e Ajustes Finais
-## Após tudo conectado vem o teste dos Fins de Curso, Joystick e dos Motores:
+##### Após tudo conectado vem o teste dos Fins de Curso, Joystick e dos Motores:
 1 º Motores: Deixe ambos os eixos da estrutura em uma posição central, carregue um coigo basico como Codigo vai e vem de teste. (coloca os motores para irem e voltarem com um segundo de duração) e inverta a conexão dos polos deles na ponte H caso não estejam indo para o lado correto.
 
 https://github.com/user-attachments/assets/6c203f99-3733-4c18-b905-70877bff4f25
@@ -208,7 +216,7 @@ Se tudo estiver certo é para o motor que por exemplo estava avançando na dire�
 
 Resultado: 
 
-https://youtube.com/shorts/7V9YcSOVFJ0?feature=share
+* [Video do Projeto](https://youtube.com/shorts/7V9YcSOVFJ0?feature=share)
 
 ![Imagem do WhatsApp de 2025-11-07 à(s) 17 22 16_45989f6b](https://github.com/user-attachments/assets/7f686f21-1734-4e7c-82f7-4e471df61c5e)
 
