@@ -2,9 +2,9 @@
 Este repositório contem o nosso projeto da Feira Industrial do 1º ano de Mecatrônica (tema: Jogos Eletrônicos) onde foi desenvolvido um labirinto com um personaguem controlado por motores com redução de torque DC. Que juntos de outros elementos formam um mecanismo que se movimenta nos eixos espaciais X e Y por controle de um Joystick  
 
 ### 👥 Equipe (Colaboradores) 
-* [José Heitor Backhaus Soares](https.github.com/Josemiauloko)  
-* [Nome do Aluno 2](https.github.com/usuario-github-2) 
-* [Nome do Aluno 3](https.github.com/usuario-github-3)
+* [José Heitor Backhaus Soares](https.github.com/Josemiauloko-github)  
+* [Nicolas Abraão](https.github.com/NLLL-03-github) 
+* [Nome do Aluno 3](https.github.com/Kayanabi-github)
 
 ### 📖 Descrição do Projeto: 
 #### Problema: Mover um cervo de MDF por um labirinto de madeira nos eixos X e Y por meio de um joistick.
@@ -29,9 +29,9 @@ Para ir para frente ou tras são energizadas as suas entradas com 12v, promovend
 Capta os comandos de acionamento dos motores enviados pelo Arduino, ligando-os e desligando-os. ela esta presente unicamente pelo fato de estes motores consumirem > 40mA que o arduino não suporta fornecer, servindo como um Amplificador.
 
 ##### Arduino: 
-Processa os imputs e outputs de sistema, fazendo as comparações logicas ------------------------------------------------------
+Processa os imputs e outputs de sistema, fazendo as comparações logicas Ife else para verificar se o joistick eo fim de curso estão ativados em algum sentido, para promover ou interromper o movimento dos motores.
 
-Quais tecnologias (hardware e software) foram centrais? 
+Para o fim de fazer um jogo controlado por um Joistick o arduino ea ponte H pderiam ser dispensados do Projeto por meio da ligação em serie de uma fonte de tensão nos Joisticks, nos Fins de curso e depois nos Motores, porem pretendemos utilizar a estrutura e as funções do arduino em projetos futuros.
 
 ### 🔧 Hardware (Componentes Utilizados):
 
@@ -165,7 +165,7 @@ Evite de ir até o fim de curso, pois ele ainda pode estar mau configurado trava
 
 3 º Fins de Curso: clique manualmente nos fins de curso e veja qual dos lados do joistick ele travou, caso aja problemas mude no software qual é o pino de saida daquele fim de curso, não se esquecendo de trocar o outro pino que tambêm apresenta falha na definição.
 
-Se tudo estiver certo é para o moter que por exemplo estava avançando na direção Y+ (btnYplus no codigo) parar quando ele atingir o Fim de Curso (limitYplus). 
+Se tudo estiver certo é para o motor que por exemplo estava avançando na direção Y+ (btnYplus no codigo) parar quando ele atingir o Fim de Curso (limitYplus). 
  
 
 ▶️ Como Usar Depois de montado e programado, como o projeto funciona? 1.  Ligue a fonte de alimentação externa. 2.  O braço robótico irá para a posição "Home" (inicial). 3.  Abra o "Serial Monitor" na Arduino IDE (Baud Rate 9600). 4.  Envie '1' para iniciar o ciclo automático ou '0' para parar. 
