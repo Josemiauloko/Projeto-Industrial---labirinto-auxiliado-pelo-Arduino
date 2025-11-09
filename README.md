@@ -35,52 +35,55 @@ Para o fim de fazer um jogo controlado por um Joistick o arduino ea ponte H pode
 
 ### 🔧 Hardware (Componentes Utilizados):
 
-*Arduino UNO 
+* Arduino UNO 
 
-*Ponte H l298n (Guia de uso: https://blog.eletrogate.com/guia-definitivo-de-uso-da-ponte-h-l298n/)
+* Ponte H l298n (Guia de uso: https://blog.eletrogate.com/guia-definitivo-de-uso-da-ponte-h-l298n/)
 
-*cabos Macho-Macho. 
+* cabos Macho-Macho. 
 
-*2 Motores com redução 12V, 150mA 
+* 2 Motores com redução 12V, 150mA 
 
-*Manche Joystick Fliperama 
+* Manche Joystick Fliperama 
 
-*8 Switches 
+* 8 Switches 
 
 * Fonte de alimentação arduino 9V, 3A (outras alternativas disponiveis em: https://docs.arduino.cc/learn/electronics/power-pins/ )
 
-*Fonte de alimentação ponte H 12V, 2A 
+* Fonte de alimentação ponte H 12V, 2A 
 
-*Fita adesiva 
+* Fita adesiva 
 
-*Madeira  
+* Madeira compensada e MDF  
 
-*Parafusos 
+* Parafusos 
 
-*Barras de metal 
+* Porcas e Arruelas de Metal
 
-*Papelão  
+* 4 Barras de metal 
 
-*Tintas de variadas cores 
+* Papelão  
 
-*Cola quente  
+* Tintas de variadas cores 
 
-*Eixos com molas de aço  
+* Cola quente  
+
+* Hastes parafusadas + adaptadores maleáveis  
 
 ## 💻 Software e Dependências:
 ### O que é necessário para rodar o código? 
-Todo o Codigo é rodado dentro da Placa Arduino Uno R3 mas também pode ser executado en outros microcontoladores ( como as outras variações do tipo arduino ) desde que este entenda a linguagem C++, contenha a quantidade de pinos de  OUTPUT e IMPUT analogicos e digitais nescessarios além do poder de memoria e processamento caracteristicos do microcontrolador. 
+Todo o Codigo é rodado dentro da Placa Arduino Uno R3 mas também pode ser executado en outros microcontoladores ( como as outras variações do tipo arduino, ESP 32, raspberry PI etc ) desde que este entenda a linguagem C++, contenha a quantidade de pinos de  OUTPUT e IMPUT analogicos e digitais nescessarios, poder de memoria e processamento caracteristicos do microcontrolador além da biblioteca padrão do Arduino Instalada, denominada Core. 
 
-Tambem é nescessario conter uma ponte H L298n que vai traduzir os comandos do arduino aos motores, servindo como amplificador de corrente.
- **Firmware/Código:**
-O código principal está na pasta `Codigo-controle motores X e Y`.
-O Secundario caso o primeiro não funcione: Codigo-controle motores X e Y 2
-E o de texte: Codigo vai e vem de texte
-Linguagem: C++ (Arduino) *
+Tambem é nescessario conter uma ponte H L298n ou  que vai traduzir os comandos do arduino aos motores, servindo como amplificador de corrente.
+
+**Firmware/Código:**
+*O código principal está na pasta `Codigo-controle motores X e Y`.
+*Codigo Secundario caso o primeiro não funcione: Codigo-controle motores X e Y 2
+*E o de texte: Codigo vai e vem de texte
+Linguagem: C++ (Arduino)
 Arduino IDE (versão 1.8.19 ou superior)
   
 **Bibliotecas (Libraries):**
-*Core: padrão do arduino que já vem instalada do programa ide, servindo para as funções DigitalRead, AnalogWrite entre outras presentes no codigo.* 
+*Core: padrão do arduino que já vem instalada do programa Arduino ide, servindo para as funções DigitalRead, AnalogWrite entre outras presentes no codigo.* 
 
 ### Diagrama: 
 Diagrama Geral (não comentado):
