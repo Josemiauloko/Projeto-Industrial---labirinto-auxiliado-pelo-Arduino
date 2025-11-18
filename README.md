@@ -18,7 +18,7 @@ Montar um jogo Mecatrônico para a feira industrial, mantendo um custo relativam
 
 #### Funcionamento: 
 ##### Joystick:
-Como exemplo digamos que o jogador move o Joystick para direita (X+) a fim de passar o cervo pelo labirinto tendo como objetivo chegar ao seu final o mais rápido possível, assim os Switches traduzem a informação mecânica em um sinal elétrico de HIGH para LOW, que é interpretado pelo Arduino por meio de uma de suas portas digitais. 
+O jogador utiliza o Joystick o movendo para direita (X+) a fim de passar o cervo por um caminho do labirinto com o objetivo de chegar ao seu final o mais rápido possível, assim os Switches traduzem a informação mecânica dada pelo joystick em um sinal elétrico de LOW para HIGHT ou HIGHT para LOW, que é interpretado pelo Arduino por meio de suas de suas portas digitais para transformar novamento em movimento para os motores. 
 
 ##### Fins de Curso:
 O Arduino verifica o estado atual dos fins de curso para saber se algum deles está acionado (no nosso caso limitXplus), caso não o sistema permite que o motor avance.
