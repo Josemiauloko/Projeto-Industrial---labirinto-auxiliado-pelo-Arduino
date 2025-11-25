@@ -3,10 +3,10 @@ Este repositório contém o nosso projeto da Feira Industrial do 1º ano de Meca
 
 ### 👥 Equipe (Colaboradores) 
 * [José Heitor Backhaus Soares](https.github.com/Josemiauloko-github-1)  
-* [Nicolas Abraão](https.github.com/NLLL-03-github-2)
-* [Pietro Araujo](https.github.com/Kayanabi-github)
+* [Nicollas Abraão](https.github.com/NLLL-03-github-2)
+* [Pietro Renato](https.github.com/Kayanabi-github)
 * [Lívia Oliveira](https.github.com/livxkhw-github)
-* Murilo Pinheiro
+* Murilo Henrique
 
 ### 📖 Descrição do Projeto: 
 #### Problema: Mover um cervo de MDF por um labirinto de madeira nos eixos X e Y por meio de um joystick.
