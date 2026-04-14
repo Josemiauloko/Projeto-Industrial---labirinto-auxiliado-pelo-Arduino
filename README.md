@@ -1,4 +1,4 @@
-# Projeto-Industrial-labirinto-auxiliado-pelo-Arduino
+# Projeto-Industrial-labirinto-auxiliado-pelo-Arduino "Corra Cervo Corra!"
 Este repositório contém o nosso projeto da Feira Industrial do 1º ano de Mecatrônica (tema: Jogos Eletrônicos) no qual foi desenvolvido um labirinto com um personagem controlado por motores com redução de torque DC. Que, juntos com outros elementos, formam um mecanismo que se movimenta nos eixos espaciais X e Y controlado por um joystick.  
 
 ### 👥 Equipe (Colaboradores) 
